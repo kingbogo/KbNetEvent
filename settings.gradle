@@ -1,0 +1,3 @@
+include ':netevent'
+include ':app'
+rootProject.name = "KbNetEvent"
