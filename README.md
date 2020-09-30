@@ -14,17 +14,17 @@ implementation 'com.github.kingbogo:netevent:{version}'
    NetEventBus.getInstance().init(this);
 ```
 
-2、注册：
+2、注册
 ```
    NetEventBus.getInstance().registerObserver(this);
 ```
 
-3、反注册：
+3、反注册
 ```
    NetEventBus.getInstance().unRegisterObserver(this);
 ```
 
-4、监听：
+4、监听
 ```
     /**
      * eventMode指网络订阅模式，默认订阅所有网络变化情况。
@@ -37,7 +37,7 @@ implementation 'com.github.kingbogo:netevent:{version}'
     }
 ```
 
-5、释放资源：
+5、释放资源
 ```
   NetEventBus.getInstance().release();
 ```
