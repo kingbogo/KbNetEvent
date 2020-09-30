@@ -37,7 +37,7 @@ implementation 'com.github.kingbogo:netevent:{version}'
     }
 ```
 
-5、释放资源
+5、App退出时释放资源
 ```
   NetEventBus.getInstance().release();
 ```
