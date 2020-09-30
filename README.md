@@ -2,7 +2,7 @@
 
  [![Download](https://api.bintray.com/packages/kingbogo/maven/NetEvent/images/download.svg) ](https://bintray.com/kingbogo/maven/NetEvent/_latestVersion)
 
-Android 网络监听。5.0以上的使用ConnectivityManager实现，5.0以下的使用"广播"实现。
+Android 网络状态变化监听库。5.0以上的使用ConnectivityManager实现，5.0以下的使用"广播"实现。
 
 ```
 implementation 'com.github.kingbogo:netevent:{version}'
