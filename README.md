@@ -33,7 +33,7 @@ implementation 'com.github.kingbogo:netevent:{version}'
      */
     @NetEvent(eventMode = EventMode.AUTO)
     public void onNetChanged(NetType netType) {
-        KbLogUtil.i(TAG, "_onNetChanged(), netType -----> " + netType);
+        KbLogUtil.i(TAG, "_onNetChanged(), 当前网络netType -----> " + netType);
     }
 ```
 
