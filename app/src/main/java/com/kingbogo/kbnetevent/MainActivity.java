@@ -39,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
         NetEventBus.getInstance().release();
     }
 
+    /**
+     * eventMode指网络订阅模式，默认订阅所有网络变化情况。
+     *
+     * @param netType 当前的网络类型
+     */
     @NetEvent(eventMode = EventMode.AUTO)
     public void onNetChanged(NetType netType) {
-        KbLogUtil.i(TAG, "_onNetChanged(), netType -----> " + netType);
-    }
-
-    @NetEvent(eventMode = EventMode.DISCONNECT)
-    public void onNetDisconnect(NetType netType) {
-        KbLogUtil.i(TAG, "_onNetDisconnect(), 网络断开了，netType -----> " + netType);
+        KbLogUtil.i(TAG, "_onNetChanged(), 当前网络netType -----> " + netType);
     }
 
 }
