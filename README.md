@@ -26,7 +26,7 @@ implementation 'com.github.kingbogo:netevent:{version}'
 
 4、监听
 ```
-    /**
+/**
      * eventMode指网络订阅模式，默认订阅所有网络变化情况。
      *
      * @param netType 当前的网络类型
