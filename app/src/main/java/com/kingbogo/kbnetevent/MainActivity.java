@@ -1,8 +1,8 @@
 package com.kingbogo.kbnetevent;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.kingbogo.netevent.NetEventBus;
 import com.kingbogo.netevent.annotation.NetEvent;
@@ -46,7 +46,27 @@ public class MainActivity extends AppCompatActivity {
      */
     @NetEvent(eventMode = EventMode.AUTO)
     public void onNetChanged(NetType netType) {
-        KbLogUtil.i(TAG, "_onNetChanged(), 当前网络netType -----> " + netType);
+        KbLogUtil.i(TAG, "_onNetChanged(), 当前网络变化netType -----> " + netType);
     }
+
+    //    /**
+    //     * eventMode指网络订阅模式，EventMode.CONNECT
+    //     *
+    //     * @param netType 当前的网络类型
+    //     */
+    //    @NetEvent(eventMode = EventMode.CONNECT)
+    //    public void onNetConnected(NetType netType) {
+    //        KbLogUtil.i(TAG, "_onNetConnected(), 当前连接网络netType -----> " + netType);
+    //    }
+    //
+    //    /**
+    //     * eventMode指网络订阅模式，EventMode.DISCONNECT
+    //     *
+    //     * @param netType 当前的网络类型
+    //     */
+    //    @NetEvent(eventMode = EventMode.DISCONNECT)
+    //    public void onNetDisconnect(NetType netType) {
+    //        KbLogUtil.i(TAG, "_onNetDisconnect(), 当前断开网络netType -----> " + netType);
+    //    }
 
 }

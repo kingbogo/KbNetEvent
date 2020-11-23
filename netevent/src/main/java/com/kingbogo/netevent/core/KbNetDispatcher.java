@@ -101,10 +101,8 @@ public class KbNetDispatcher implements Handler.Callback {
 
         } else if (what == KbConstants.WHAT_RE_CHECK_NETWORK) {
             NetType netType = KbNetworkUtil.getNetType();
-            if (netType != NetType.NONE) {
-                // 如果重新检测有网络时：再派发一次（解决网络切换时瞬间无网络的bug）
-                post4MainThread(netType);
-            }
+            // 如果重新检测有网络时：再派发一次（解决网络切换时瞬间无网络的bug）
+            post4MainThread(netType);
         }
         return false;
     }
